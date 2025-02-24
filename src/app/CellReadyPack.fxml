@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.CellReadyPackController">
+   <children>
+      <VBox prefHeight="676.0" prefWidth="370.0">
+         <children>
+            <ImageView fx:id="img" fitHeight="193.0" fitWidth="415.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="accomId" alignment="CENTER" prefHeight="35.0" prefWidth="417.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalbed" alignment="CENTER" layoutX="10.0" layoutY="206.0" prefHeight="33.0" prefWidth="416.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceAccom" alignment="CENTER" layoutX="10.0" layoutY="224.0" prefHeight="43.0" prefWidth="421.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="launch" alignment="CENTER" layoutX="10.0" layoutY="241.0" prefHeight="39.0" prefWidth="422.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="prmAnimalAccom" alignment="CENTER" layoutX="10.0" layoutY="259.0" prefHeight="40.0" prefWidth="418.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="disable" alignment="CENTER" layoutX="10.0" layoutY="276.0" prefHeight="34.0" prefWidth="416.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="hasAC" alignment="CENTER" layoutX="10.0" layoutY="294.0" prefHeight="32.0" prefWidth="417.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="hasWifi" alignment="CENTER" layoutX="10.0" layoutY="312.0" prefHeight="32.0" prefWidth="424.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="haschildRoom" alignment="CENTER" layoutX="10.0" layoutY="329.0" prefHeight="37.0" prefWidth="416.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="companyAcc" alignment="CENTER" layoutX="10.0" layoutY="347.0" prefHeight="36.0" prefWidth="418.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="locationAcc" alignment="CENTER" layoutX="10.0" layoutY="364.0" prefHeight="34.0" prefWidth="418.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailAcc" alignment="CENTER" layoutX="10.0" layoutY="382.0" prefHeight="37.0" prefWidth="416.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="phoneAc" alignment="CENTER" layoutX="10.0" layoutY="400.0" prefHeight="47.0" prefWidth="415.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox prefHeight="676.0" prefWidth="342.0">
+         <children>
+            <Label fx:id="existCabin" alignment="CENTER" prefHeight="106.0" prefWidth="218.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="port" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="108.0" prefWidth="218.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="hasAuto" alignment="CENTER" layoutX="10.0" layoutY="28.0" prefHeight="116.0" prefWidth="218.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="permAnimalShip" alignment="CENTER" layoutX="10.0" layoutY="45.0" prefHeight="89.0" prefWidth="218.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceShip" alignment="CENTER" layoutX="10.0" layoutY="63.0" prefHeight="92.0" prefWidth="218.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="capacityShip" alignment="CENTER" layoutX="10.0" layoutY="80.0" prefHeight="100.0" prefWidth="218.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="shipid" alignment="CENTER" layoutX="10.0" layoutY="98.0" prefHeight="98.0" prefWidth="218.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="companyShip" alignment="CENTER" layoutX="10.0" layoutY="116.0" prefHeight="103.0" prefWidth="218.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="locationShip" alignment="CENTER" layoutX="10.0" layoutY="133.0" prefHeight="94.0" prefWidth="218.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailShip" alignment="CENTER" layoutX="10.0" layoutY="151.0" prefHeight="101.0" prefWidth="218.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="phoneShip" alignment="CENTER" layoutX="10.0" layoutY="168.0" prefHeight="89.0" prefWidth="218.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox prefHeight="676.0" prefWidth="315.0">
+         <children>
+            <Label fx:id="hasBuis" alignment="CENTER" prefHeight="76.0" prefWidth="191.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="airport" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="58.0" prefWidth="191.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="overweight" alignment="CENTER" layoutX="10.0" layoutY="28.0" prefHeight="63.0" prefWidth="191.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceAir" alignment="CENTER" layoutX="10.0" layoutY="45.0" prefHeight="58.0" prefWidth="191.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="permAnimalAir" alignment="CENTER" layoutX="10.0" layoutY="63.0" prefHeight="71.0" prefWidth="191.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="capacityAir" alignment="CENTER" layoutX="10.0" layoutY="80.0" prefHeight="69.0" prefWidth="191.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="airid" alignment="CENTER" layoutX="10.0" layoutY="98.0" prefHeight="62.0" prefWidth="191.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="companyAir" alignment="CENTER" layoutX="10.0" layoutY="116.0" prefHeight="70.0" prefWidth="191.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="locationAir" alignment="CENTER" layoutX="10.0" layoutY="133.0" prefHeight="71.0" prefWidth="191.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailAir" alignment="CENTER" layoutX="10.0" layoutY="151.0" prefHeight="61.0" prefWidth="191.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="phoneAir" alignment="CENTER" layoutX="10.0" layoutY="168.0" prefHeight="66.0" prefWidth="191.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalCost" alignment="CENTER" prefHeight="18.0" prefWidth="196.0" text="Label" textFill="#c70b0b">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</HBox>

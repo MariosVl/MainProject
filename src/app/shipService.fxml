@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.addServiceShip">
+   <children>
+      <TextField fx:id="costShip" alignment="CENTER" layoutX="56.0" layoutY="206.0" promptText="cost">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="portDeparture" alignment="CENTER" layoutX="617.0" layoutY="206.0" promptText="Arrival_Port">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></TextField>
+      <RadioButton fx:id="yesExistCabin" layoutX="356.0" layoutY="376.0" mnemonicParsing="false" text="ΝΑΙ">
+         <toggleGroup>
+            <ToggleGroup fx:id="hasCabin" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="notExistCabin" layoutX="461.0" layoutY="376.0" mnemonicParsing="false" text="ΟΧΙ" toggleGroup="$hasCabin" />
+      <RadioButton fx:id="yesAnimal" layoutX="624.0" layoutY="501.0" mnemonicParsing="false" text="ΝΑΙ">
+         <toggleGroup>
+            <ToggleGroup fx:id="permitAnimal" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="notAnimal" layoutX="737.0" layoutY="501.0" mnemonicParsing="false" text="ΟΧΙ" toggleGroup="$permitAnimal" />
+      <RadioButton fx:id="yesAuto" layoutX="56.0" layoutY="501.0" mnemonicParsing="false" text="ΝΑΙ">
+         <toggleGroup>
+            <ToggleGroup fx:id="hasAuto" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="noAuto" layoutX="208.0" layoutY="501.0" mnemonicParsing="false" text="ΟΧΙ" toggleGroup="$hasAuto" />
+      <Label alignment="CENTER" layoutX="335.0" layoutY="334.0" prefHeight="18.0" prefWidth="194.0" text="ΔΥΝΑΤΟΤΗΤΑ ΚΑΜΠΙΝΑΣ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="610.0" layoutY="459.0" prefHeight="18.0" prefWidth="186.0" text="ΕΠΙΤΡΕΠΕΤΑΙ ΚΑΤΟΙΚΙΔΙΟ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="459.0" prefHeight="20.0" prefWidth="269.0" text="ΔΥΝΑΤΟΤΗΤΑ ΜΕΤΑΦΟΡΑΣ ΟΧΗΜΑΤΟΣ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button layoutX="356.0" layoutY="557.0" mnemonicParsing="false" onAction="#applyShipService" prefHeight="48.0" prefWidth="173.0" text="Apply" textFill="#30c2e3">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <TextField fx:id="shipID" alignment="CENTER" layoutX="56.0" layoutY="99.0" promptText="shipId">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutX="158.0" prefHeight="48.0" prefWidth="548.0" text="ΑΚΤΟΠΛΟΙΚΗ ΥΠΗΡΕΣΙΑ" textFill="#30c2e3">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="passCapacity" alignment="CENTER" layoutX="617.0" layoutY="99.0" promptText="Passengers_Capacity">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Label fx:id="shipIdValidate" alignment="CENTER" layoutX="16.0" layoutY="137.0" prefHeight="55.0" prefWidth="270.0" text="Υποχρεωτικό" textFill="#d90f0f">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="passCapacityValidate" alignment="CENTER" layoutX="600.0" layoutY="137.0" prefHeight="55.0" prefWidth="232.0" text="Υποχρεωτικό" textFill="#e41818">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="costValidate" alignment="CENTER" layoutX="26.0" layoutY="248.0" prefHeight="55.0" prefWidth="254.0" text="Υποχρεωτικό" textFill="#d70e0e">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="portDepartureValidate" alignment="CENTER" layoutX="602.0" layoutY="248.0" prefHeight="55.0" prefWidth="225.0" text="Υποχρεωτικό" textFill="#d71212">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="281.0" layoutY="48.0" prefHeight="36.0" prefWidth="302.0" text="ΒΑΣΙΚΕΣ ΠΑΡΟΧΕΣ/ΥΠΗΡΕΣΙΕΣ" textFill="#30c2e3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="281.0" layoutY="285.0" prefHeight="36.0" prefWidth="302.0" text="ΠΡΟΣΘΕΤΑ" textFill="#30c2e3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="hasAutoValidate" alignment="CENTER" layoutX="16.0" layoutY="545.0" prefHeight="71.0" prefWidth="289.0" text="Υποχρεωτικό" textFill="#d70e0e">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="permAnimalValidate" alignment="CENTER" layoutX="565.0" layoutY="545.0" prefHeight="71.0" prefWidth="270.0" text="Υποχρεωτικό" textFill="#d70e0e">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="cabinChoiceValidate" alignment="CENTER" layoutX="293.0" layoutY="403.0" prefHeight="48.0" prefWidth="290.0" text="Υποχρεωτικό" textFill="#d90f0f">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="647.0" layoutY="10.0" prefHeight="18.0" prefWidth="180.0" text="TravelAddicted" textFill="#bf1212">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

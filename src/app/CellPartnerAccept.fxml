@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.CellPartnerAcceptController">
+   <children>
+      <VBox prefHeight="426.0" prefWidth="250.0">
+         <children>
+            <Label fx:id="companyName" alignment="CENTER" prefHeight="78.0" prefWidth="246.0" text="Label">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="AFM" alignment="CENTER" prefHeight="83.0" prefWidth="246.0" text="Label">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="Location" alignment="CENTER" prefHeight="82.0" prefWidth="246.0" text="Label">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="typeService" alignment="CENTER" prefHeight="75.0" prefWidth="246.0" text="Label">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="phone" alignment="CENTER" prefHeight="78.0" prefWidth="246.0" text="Label">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" alignment="CENTER" prefHeight="78.0" prefWidth="246.0" text="Label">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <TextArea fx:id="financial_agreement" prefHeight="426.0" prefWidth="354.0" promptText="financial_agreement">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextArea>
+   </children>
+</HBox>

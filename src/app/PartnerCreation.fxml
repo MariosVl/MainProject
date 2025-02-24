@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0" prefWidth="931.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.partnerController">
+   <children>
+      <Button layoutX="27.0" layoutY="617.0" mnemonicParsing="false" onAction="#partnerCreation" prefHeight="51.0" prefWidth="171.0" text="Create partner" textFill="#e76143">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <TextField fx:id="cn" alignment="CENTER" layoutX="192.0" layoutY="80.0" promptText="Company_name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="afm" alignment="CENTER" layoutX="431.0" layoutY="80.0" promptText="ΑΦΜ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="loc" alignment="CENTER" layoutX="26.0" layoutY="486.0" promptText="Location">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <Button layoutX="30.0" layoutY="14.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="26.0" prefWidth="123.0" text="Menu">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="12.0" layoutY="80.0" prefHeight="26.0" prefWidth="150.0" text="ΣΤΟΙΧΕΙΑ ΕΠΙΧΕΙΡΗΣΗΣ" textFill="#e76143">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="7.0" layoutY="214.0" prefHeight="26.0" prefWidth="159.0" text="ΣΤΟΙΧΕΙΑ ΕΠΙΚΟΙΝΩΝΙΑΣ" textFill="#e76143">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="phone" alignment="CENTER" layoutX="186.0" layoutY="214.0" prefHeight="26.0" prefWidth="171.0" promptText="Κινητό τηλέφωνο επικοινωνίας">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email" alignment="CENTER" layoutX="431.0" layoutY="214.0" prefHeight="26.0" prefWidth="171.0" promptText="Email">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="272.0" layoutY="18.0" prefHeight="32.0" prefWidth="295.0" text="ΣΤΟΙΧΕΙΑ ΣΥΝΕΡΓΑΤΗ" textFill="#e76143">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="cnValidate" alignment="CENTER" layoutX="143.0" layoutY="116.0" prefHeight="58.0" prefWidth="231.0" text="Υποχρεωτικό" textFill="#df0808">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="afmValidate" alignment="CENTER" layoutX="401.0" layoutY="116.0" prefHeight="58.0" prefWidth="219.0" text="Υποχρεωτικό" textFill="#df1919">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="locValidate" alignment="CENTER" layoutX="14.0" layoutY="519.0" prefHeight="51.0" prefWidth="197.0" text="Υποχρεωτικό" textFill="#e41111">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="phoneValidate" alignment="CENTER" layoutX="139.0" layoutY="257.0" prefHeight="58.0" prefWidth="239.0" text="Υποχρεωτικό" textFill="#dc0f0f">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailValidate" alignment="CENTER" layoutX="401.0" layoutY="257.0" prefHeight="58.0" prefWidth="219.0" text="Υποχρεωτικό" textFill="#d41a1a">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="financial_Αgreement" layoutX="231.0" layoutY="459.0" prefHeight="171.0" prefWidth="693.0" promptText="financial_Αgreement">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="financial_ΑgreementValidate" alignment="CENTER" layoutX="252.0" layoutY="632.0" prefHeight="74.0" prefWidth="675.0" text="Υποχρεωτικό" textFill="#e11010">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameSign" alignment="CENTER" layoutX="212.0" layoutY="340.0" promptText="username">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="usernameSignValidate" alignment="CENTER" layoutX="42.0" layoutY="385.0" prefHeight="66.0" prefWidth="434.0" text="Υποχρεωτικό" textFill="#d91212">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordSignValidate" alignment="CENTER" layoutX="503.0" layoutY="385.0" prefHeight="58.0" prefWidth="390.0" text="Υποχρεωτικό" textFill="#d90e0e">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordSign" alignment="CENTER" layoutX="608.0" layoutY="339.0" prefHeight="27.0" prefWidth="159.0" promptText="password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </PasswordField>
+      <Label alignment="CENTER" layoutX="696.0" layoutY="79.0" prefHeight="26.0" prefWidth="150.0" text="ΠΑΡΕΧΟΜΕΝΗ ΥΠΗΡΕΣΙΑ" />
+      <RadioButton fx:id="Accom" layoutX="635.0" layoutY="116.0" mnemonicParsing="false" text="Accomondation">
+         <toggleGroup>
+            <ToggleGroup fx:id="service" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="Airplane" layoutX="758.0" layoutY="116.0" mnemonicParsing="false" text="Airplane" toggleGroup="$service" />
+      <RadioButton fx:id="Ship" layoutX="839.0" layoutY="115.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="58.0" text="Ship" toggleGroup="$service" />
+      <Label fx:id="serviceValidate" alignment="CENTER" layoutX="661.0" layoutY="145.0" prefHeight="58.0" prefWidth="219.0" text="Υποχρεωτικό" textFill="#df1919">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="12.0" layoutY="340.0" prefHeight="26.0" prefWidth="171.0" text="ΣΤΟΙΧΕΙΑ ΛΟΓΑΡΓΙΑΣΜΟΥ" textFill="#e76143">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="20.0" layoutY="450.0" prefHeight="26.0" prefWidth="171.0" text="ΠΕΡΙΟΧΗ ΕΞΥΠΗΡΕΤΗΣΗΣ" textFill="#e76143">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+  
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.CellAirController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="382.0">
+         <children>
+            <Label fx:id="companyName" alignment="CENTER" lineSpacing="5.0" prefHeight="93.0" prefWidth="304.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label fx:id="Location" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="102.0" prefWidth="304.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label fx:id="airId" alignment="CENTER" layoutX="10.0" layoutY="60.0" prefHeight="105.0" prefWidth="304.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label fx:id="airport" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="114.0" prefWidth="304.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox prefHeight="400.0" prefWidth="375.0">
+         <children>
+            <Label fx:id="hasBuis" alignment="CENTER" prefHeight="94.0" prefWidth="297.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label fx:id="overweight" alignment="CENTER" prefHeight="87.0" prefWidth="297.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label fx:id="capacity" alignment="CENTER" prefHeight="93.0" prefWidth="297.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="permitAnimal" alignment="CENTER" prefHeight="99.0" prefWidth="297.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label fx:id="cost" alignment="CENTER" prefHeight="89.0" prefWidth="297.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+         </children>
+      </VBox>
+   </children>
+</HBox>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.CellAccomController">
+   <children>
+      <VBox prefHeight="362.0" prefWidth="220.0">
+         <children>
+            <Label fx:id="compNm" alignment="CENTER" prefHeight="85.0" prefWidth="161.0" text="Label" />
+            <Label fx:id="LocComp" alignment="CENTER" prefHeight="85.0" prefWidth="161.0" text="Label" />
+            <Label fx:id="BedsNum" alignment="CENTER" prefHeight="73.0" prefWidth="161.0" text="Label" />
+            <Label fx:id="disableEntr" alignment="CENTER" prefHeight="78.0" prefWidth="161.0" text="Label" />
+            <Label fx:id="animal" alignment="CENTER" prefHeight="69.0" prefWidth="161.0" text="Label" />
+         </children>
+      </VBox>
+      <ImageView fx:id="imgV" fitHeight="361.0" fitWidth="222.0" pickOnBounds="true" />
+      <VBox prefHeight="362.0" prefWidth="225.0">
+         <children>
+            <Label fx:id="cost" alignment="CENTER" graphicTextGap="2.0" prefHeight="71.0" prefWidth="167.0" text="Label" />
+            <Label fx:id="launch" alignment="CENTER" prefHeight="62.0" prefWidth="167.0" text="Label" />
+            <Label fx:id="childRoom" alignment="CENTER" layoutX="10.0" layoutY="379.0" prefHeight="80.0" prefWidth="167.0" text="Label" />
+            <Label fx:id="AC" alignment="CENTER" layoutX="10.0" layoutY="461.0" prefHeight="70.0" prefWidth="167.0" text="Label" />
+            <Label fx:id="wifi" alignment="CENTER" layoutX="10.0" layoutY="544.0" prefHeight="78.0" prefWidth="167.0" text="Label" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.addServiceAirPlane">
+   <children>
+      <RadioButton fx:id="noBuis" layoutX="138.0" layoutY="476.0" mnemonicParsing="false" text="ΟΧΙ">
+         <toggleGroup>
+            <ToggleGroup fx:id="hasBuis" />
+         </toggleGroup></RadioButton>
+      <TextField fx:id="Cost" alignment="CENTER" layoutX="29.0" layoutY="200.0" promptText="Cost">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="DestAirPort" alignment="CENTER" layoutX="588.0" layoutY="85.0" promptText="Destination_Αirport">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></TextField>
+      <RadioButton fx:id="yesBuis" layoutX="14.0" layoutY="476.0" mnemonicParsing="false" text="NAI" toggleGroup="$hasBuis" />
+      <RadioButton fx:id="yesOver" layoutX="602.0" layoutY="476.0" mnemonicParsing="false" text="ΝΑΙ">
+         <toggleGroup>
+            <ToggleGroup fx:id="overweight" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="noOver" layoutX="734.0" layoutY="476.0" mnemonicParsing="false" text="ΟΧΙ" toggleGroup="$overweight" />
+      <Label alignment="CENTER" layoutX="23.0" layoutY="434.0" prefHeight="19.0" prefWidth="182.0" text="ΔΙΑΤΙΘΕΝΤΑΙ BUISNESS ΘΕΣΗ">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="330.0" layoutY="336.0" prefHeight="18.0" prefWidth="164.0" text="ΕΠΙΤΡΕΠΟΝΤΑΙ ΚΑΤΟΙΚΙΔΙΑ " />
+      <Label alignment="CENTER" layoutX="602.0" layoutY="434.0" prefHeight="19.0" prefWidth="202.0" text="ΧΡΕΩΣΗ ΥΠΕΡΒΑΡΩΝ ΑΠΟΣΚΕΥΩΝ">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <RadioButton fx:id="yesPermAnimal" layoutX="342.0" layoutY="372.0" mnemonicParsing="false" text="ΝΑΙ">
+         <toggleGroup>
+            <ToggleGroup fx:id="permitAnimal" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="noPermAnim" layoutX="430.0" layoutY="372.0" mnemonicParsing="false" text="ΟΧΙ" toggleGroup="$permitAnimal" />
+      <Button layoutX="330.0" layoutY="568.0" mnemonicParsing="false" onAction="#applyairplaneservice" prefHeight="42.0" prefWidth="164.0" text="Apply" textFill="#222cb2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <TextField fx:id="AirPlaneId" alignment="CENTER" layoutX="38.0" layoutY="85.0" promptText="AirplaneId">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutX="173.0" prefHeight="42.0" prefWidth="478.0" text="ΑΕΡΟΠΟΡΙΚΗ ΥΠΗΡΕΣΙΑ" textFill="#222cb2">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="airplaneIdValidate" alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="121.0" prefHeight="54.0" prefWidth="222.0" text="Υποχρεωτικό " textFill="#dc0909">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="DestAirportValidate" alignment="CENTER" contentDisplay="CENTER" layoutX="584.0" layoutY="121.0" prefHeight="54.0" prefWidth="222.0" text="Υποχρεωτικό " textFill="#dc0909">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="CostValidate" alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="236.0" prefHeight="54.0" prefWidth="222.0" text="Υποχρεωτικό " textFill="#dc0909">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AirplaneCapacity" alignment="CENTER" layoutX="594.0" layoutY="200.0" prefHeight="27.0" prefWidth="181.0" promptText="AirPlane_Capacity">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Label fx:id="airplaneCapacityValidate" alignment="CENTER" contentDisplay="CENTER" layoutX="584.0" layoutY="236.0" prefHeight="54.0" prefWidth="222.0" text="Υποχρεωτικό " textFill="#dc0909">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="hasBuisValidate" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="508.0" prefHeight="54.0" prefWidth="229.0" text="Υποχρεωτικό " textFill="#dc0909">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="OverWPackValidate" alignment="CENTER" contentDisplay="CENTER" layoutX="582.0" layoutY="508.0" prefHeight="54.0" prefWidth="222.0" text="Υποχρεωτικό " textFill="#dc0909">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="permAnimalValidate" alignment="CENTER" contentDisplay="CENTER" layoutX="322.0" layoutY="399.0" prefHeight="54.0" prefWidth="202.0" text="Υποχρεωτικό " textFill="#dc0909">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="301.0" layoutY="42.0" prefHeight="18.0" prefWidth="222.0" text="ΒΑΣΙΚΕΣ ΠΑΡΟΧΕΣ/ΣΤΟΙΧΕΙΑ" textFill="#222cb2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="301.0" layoutY="301.0" prefHeight="18.0" prefWidth="222.0" text="ΠΡΟΣΘΕΤΑ" textFill="#222cb2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="686.0" layoutY="7.0" prefHeight="18.0" prefWidth="180.0" text="TravelAddicted" textFill="#bf1212">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
